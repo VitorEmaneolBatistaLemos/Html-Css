@@ -66,6 +66,9 @@ section#img02{
     background-image: url(imagens/background002.jpg);
     background-position: left center;
 }
+section#img02 > p{
+    text-shadow: 1px 2px #000000;
+}
 footer{
     background-color: black;
     color: white;
