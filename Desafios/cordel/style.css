@@ -12,7 +12,9 @@
     padding: 0;
     text-decoration: none;
 }
-
+a:hover{
+    text-decoration: underline;
+}
 
 
 header{
@@ -36,9 +38,8 @@ header > p{
     padding-bottom: 45px;
     font-size: 1.5vw;
 }
-a:hover{
-    text-decoration: underline;
-}
+
+
 section{
     font-family: var(--fonte2);
     font-size: 3vw;
@@ -69,15 +70,17 @@ footer{
     background-color: black;
     color: white;
     margin-top: 5px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    text-align: center;
-    font-size: 1.3vw;
-}
-footer img{
+    padding-top: 5px;
     padding-bottom: 5px;
-    position: relative;
-    top: 15px;
+    text-align: center;
+    font-size: 2vw;
+}
+footer a{
+    color: white;
+    font-weight: bolder;
+    
 }
 
-
+footer a:after{
+    content: '\00A0\1F517';
+}
