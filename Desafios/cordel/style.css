@@ -12,17 +12,18 @@
     padding: 0;
     text-decoration: none;
 }
-a{
-    font-weight: bold;
-}
+
+
 
 header{
     background-color: var(--cor01);
     color: white;
     text-align: center;
+    
 }
-header > p > a{
+header  a{
     color: white;
+    font-weight: bold;
 }
 header > h1{
     font-weight: normal;
@@ -38,7 +39,32 @@ header > p{
 a:hover{
     text-decoration: underline;
 }
-
+section{
+    font-family: var(--fonte2);
+    font-size: 3vw;
+    padding-top: 60px;
+    padding-left: 45px;
+}
+section#img01{
+    background-image: url(imagens/background001.jpg);
+    background-position: left center;
+}
+section.mimg{
+    box-shadow: inset 1px -1px 5px 1px black;
+    background-size: cover;
+    background-attachment: fixed;
+}
+section.mimg > p{
+    color: white;
+    display: inline-block;
+    padding: 15px;
+    margin-bottom: 30px;
+    background-color: rgba(0, 0, 0, 0.411);
+}
+section#img02{
+    background-image: url(imagens/background002.jpg);
+    background-position: left center;
+}
 footer{
     background-color: black;
     color: white;
