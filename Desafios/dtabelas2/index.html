@@ -26,88 +26,93 @@
             background-color: gray;
             color: white;
         }
+        div#tcontainer{
+            overflow-x: auto;
+        }
     </style>
 </head>
 <body>
-    <table>
-        <thead>
-            <tr>
-                <th rowspan="2" scope="rowgroup" class="gray">
-                    Área
-                </th>
-                <th rowspan="2" class="gray">
-                    Disciplina
-                </th>
-                <th colspan="2" class="gray">
-                    Notas
-                </th>
-                <th rowspan="2" class="gray">
-                    Média
-                </th>
-            </tr>
-            <tr>
-                <th class="gray">
-                    Nota 1
-                </th>
-                <th class="gray">
-                    Nota 2
-                </th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <th rowspan="4">Exatas</th>
-                <td>Matemática</td>
-                <td class="numerico">1</td>
-                <td class="numerico">1</td>
-                <td class="numerico">1</td>
-                
-            </tr>
-            <tr>
-                <td>Física</td>
-                <td class="numerico">1</td>
-                <td class="numerico">1</td>
-                <td class="numerico">1</td>
-            
-            </tr>
-            <tr>
-                <td>Química</td>
-                <td class="numerico">1</td>
-                <td class="numerico">1</td>
-                <td class="numerico">1</td>
-                
-            </tr>
-            <tr>
-                <td>Biologia</td>
-                <td class="numerico">1</td>
-                <td class="numerico">1</td>
-                <td class="numerico">1</td>
-                
-            </tr>
-            <tr>
-                <th colspan="4" class="gray">Medias Exatas</th>
-                <td class="gray">0.0</td>
-            </tr>
-            <tr>
-                <th rowspan="2">Humanas</th>
-                <td>Historia</td>
-                <td class="numerico">1</td>
-                <td class="numerico">1</td>
-                <td class="numerico">1</td>
-                
-            </tr>
-            <tr>
-                <td>Geografia</td>
-                <td class="numerico">1</td>
-                <td class="numerico">1</td>
-                <td class="numerico">1</td>
-                
-            </tr>
-            <tr>
-                <th colspan="4" class="gray">Medias Humanas</th>
-                <td class="gray">0.0</td>
-            </tr>
-        </tbody>
-    </table>
+    <div id="tcontainer">
+        <table>
+            <thead>
+                <tr>
+                    <th rowspan="2" scope="rowgroup" class="gray">
+                        Área
+                    </th>
+                    <th rowspan="2" class="gray" scope="row">
+                        Disciplina
+                    </th>
+                    <th colspan="2" class="gray" scope="row">
+                        Notas
+                    </th>
+                    <th rowspan="2" class="gray" scope="row">
+                        Média
+                    </th>
+                </tr>
+                <tr>
+                    <th class="gray" scope="row">
+                        Nota 1
+                    </th>
+                    <th class="gray" scope="row">
+                        Nota 2
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th rowspan="4" scope="colgroup">Exatas</th>
+                    <td>Matemática</td>
+                    <td class="numerico">1</td>
+                    <td class="numerico">1</td>
+                    <td class="numerico">1</td>
+        
+                </tr>
+                <tr>
+                    <td>Física</td>
+                    <td class="numerico">1</td>
+                    <td class="numerico">1</td>
+                    <td class="numerico">1</td>
+        
+                </tr>
+                <tr>
+                    <td>Química</td>
+                    <td class="numerico">1</td>
+                    <td class="numerico">1</td>
+                    <td class="numerico">1</td>
+        
+                </tr>
+                <tr>
+                    <td>Biologia</td>
+                    <td class="numerico">1</td>
+                    <td class="numerico">1</td>
+                    <td class="numerico">1</td>
+        
+                </tr>
+                <tr>
+                    <th colspan="4" class="gray " scope="col">Medias Exatas</th>
+                    <td class="gray">0.0</td>
+                </tr>
+                <tr>
+                    <th rowspan="2" scope="colgroup">Humanas</th>
+                    <td>Historia</td>
+                    <td class="numerico">1</td>
+                    <td class="numerico">1</td>
+                    <td class="numerico">1</td>
+        
+                </tr>
+                <tr>
+                    <td>Geografia</td>
+                    <td class="numerico">1</td>
+                    <td class="numerico">1</td>
+                    <td class="numerico">1</td>
+        
+                </tr>
+                <tr>
+                    <th colspan="4" class="gray" scope="col">Medias Humanas</th>
+                    <td class="gray">0.0</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 </body>
 </html>
